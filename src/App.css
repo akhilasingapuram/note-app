@@ -1,38 +1,60 @@
+/* App Container */
 .App {
   text-align: center;
+  margin: 2rem;
+  background-color:darkolivegreen;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Note Form */
+.note-form{
+  /* max-width: 400px; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+}
+.note-form button{
+  background-color:orange ;
+  color:black;
+  border:none;
+  padding:0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+/* Note List */
+.note-list{
+  max-width: 600px;
+  margin:2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+}
+.note-list ul{
+  list-style: none;
+  padding: 0;
+}
+.note-list li{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+}
+.note-list strong{
+  display:block;
+  margin-bottom: 0.5rem;
+}
+.note-list button{
+  background-color:lightseagreen;
+  color:blueviolet;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.25rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
